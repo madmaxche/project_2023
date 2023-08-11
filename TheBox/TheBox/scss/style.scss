@@ -4,3 +4,122 @@
 @import "_common.scss";
 @import "_mixins.scss";
 
+@import url(https://fonts.googleapis.com/css?family=Work+Sans:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic&display=swap);
+
+.wrapper{
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+body{
+	font-family: 'Work Sans', sans-serif;
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: 400;
+	color: #000;
+}
+[class*=__container]{
+	max-width: 1215px;
+	margin: 0 auto;
+	padding: 0 30px;
+}
+
+.header {
+	background: #fff;
+	position: fixed;
+	width: 100%;
+	left: 0;
+	top: 0;
+	z-index: 50;
+	max-height: 80px;
+	&__row {
+		padding: 22px 0px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		flex-wrap: wrap;
+	}
+}
+.nav {
+
+	&__menu {
+		font-size: 18px;
+		font-weight: 600;
+		display: flex;
+		gap: 50px;
+		flex-wrap: wrap;
+	}
+
+	&__item {
+		transition: all 0.3s ease 0s;
+		&:hover{
+			color: #F9995D;
+		}
+	}
+}
+
+
+.main {
+	&__build {
+		height: 100vh;
+		background: url('/img/build-back.jpg') center center / cover no-repeat;
+	}
+}
+.build {
+	position: relative;
+	&__title {
+		color: #292E3D;
+		font-size: 72px;
+		font-weight: 600;
+		line-height: normal;
+		padding: 239px 142px;
+	}
+
+	&__clicker {
+	}
+}
+.clicker {
+	position: absolute;
+	right: 0;
+	bottom: 3%;
+	color: #fff;
+	background: #3559C7;
+	text-align: center;
+	font-size: 20px;
+	font-style: normal;
+	line-height: normal;
+	width: 416px;
+	height: 150px;
+	border-radius: 2px 2px 0px 0px;
+	&__title {
+		font-weight: 700;
+		margin-bottom: 20px;
+		padding-top: 20px;
+	}
+
+	&__text {
+		max-width: 312px;
+		margin: 0px auto;
+		padding-bottom: 20px;
+	}
+
+	&__buttons {
+		padding: 0px;
+		background: #292E3D;
+		min-height: 40px;
+		width: 100%;
+		padding: 10px 20px;
+	}
+
+	&__button {
+		min-width: 207px;
+		padding: 10px 20px;
+
+		span{
+			text-align: center;
+		}
+		&:nth-child(1){
+		}
+		&:nth-child(2){}
+	}
+}
